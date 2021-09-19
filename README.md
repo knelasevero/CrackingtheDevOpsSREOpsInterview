@@ -318,7 +318,7 @@ Mais alguns exemplos clássicos:
     - Como funciona resolução DNS, explique com a maior quantidade de detalhes que conseguir?
     - Como se resolve problemas de CORS?
     - Como cookies passam no protocolo HTTP?
-    - Como medir latência e outras métricas de um serviço só com ferramentas linux numa máquina?
+    - Como medir latência e outras métricas de um serviço só com ferramentas cli linux numa máquina?
     - Como matar um processo que está bloqueando um arquivo?
     - Que mudanças você faria inicialmente em pipelines de CI que estão muito demoradas?
     - Um banco de dados gerenciado na cloud está em 100% de CPU, e sua réplica está com replication lag enorme, quais são seus primeiros passos para investigar?
