@@ -242,11 +242,8 @@ Na entrevista técnica vão testar seus conhecimentos de Redes, Cloud, linux, fe
 
 ```
     Como você resolveria um problema em que um dos microserviços do seu time não está conseguindo acessar seu respectivo banco de dados?
-    ---
     Como você faria o debug desse problema?
-    ---
     Se achasse uma solução, como evitaria que isso acontecesse de novo?
-    ---
     Se o problema fosse DNS, o que você faria?
 ```
 
