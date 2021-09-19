@@ -357,10 +357,14 @@ Com relação a se preparar aqui vão alguns materiais:
     - https://www.coursera.org/professional-certificates/gcp-cloud-architect
     - https://acloudguru.com/aws-cloud-training
     - Dá uma olhada na galera brasileira que tem um conteúdo foda também: https://www.linuxtips.io/pages/trilha-de-treinamentos
-    - Existe um monte de conteúdo foda no youtube também, de graça
+    - Existe um monte de conteúdo foda no Youtube também, de graça
 - Se for aplicar pra empresas que exigem conhecimento de estruturas de dados e algoritmos para desafios de programação:
     - Leetcode é basicamente a plataforma que todo mundo usa pra se preparar https://leetcode.com/
     - https://leetcode.com/interview
+- Mais alguns links interessantes:
+    - https://www.redhat.com/sysadmin/troubleshooting-system-performance
+    - https://www.redhat.com/sysadmin/beginners-guide-network-troubleshooting-linux
+    - Me deêm um toque caso precisem que esse tipo de coisa acima seja traduzida.
 
 
 **Como se preparar para entrevista com uma pessoa olhando pra sua cara e te botando pressão?**
