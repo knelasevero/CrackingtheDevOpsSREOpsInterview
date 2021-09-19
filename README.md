@@ -364,6 +364,7 @@ Com relação a se preparar aqui vão alguns materiais:
 - Mais alguns links interessantes:
     - https://www.redhat.com/sysadmin/troubleshooting-system-performance
     - https://www.redhat.com/sysadmin/beginners-guide-network-troubleshooting-linux
+    - https://github.com/bregman-arie/devops-exercises
     - Me deêm um toque caso precisem que esse tipo de coisa acima seja traduzida.
 
 
