@@ -157,7 +157,8 @@ Vou evitar de propósito os níveis de senioridade clássicos da indústria ness
 
 Se você procurar agora por vagas Junior nessas empregas um pouco mais gigantes vai perceber duas coisas. A primeira é que vagas Júnior de Ops são um pouco difíceis de encontrar, mais difícil ainda em FAANMGs e similares. E quando encontramos alguma vaga Junior, pede mais de um ano de experiencia. Exemplo de uma [vaga iOS](https://www.amazon.jobs/de/jobs/1528493/junior-ios-engineer), pois não achei de infra enquanto estava escrevendo esse texto (mas consegui informações de conhecidos com experiencia em vagas Júnior nessas empresas).
 
-[img da vaga]
+
+![](img/ios_junior.png)
 
 ### Parte comportamental
 
