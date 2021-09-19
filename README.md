@@ -386,8 +386,6 @@ Mandar bem em entrevista é algo treinável. E a parte mais importante é saber 
 
 Me mande uma mensagem no twitter @canelasevero, ou me ache nas minhas outras redes aqui no meu site (knela.dev). Quero fazer mais alguns textos nesse sentido. Talvez até entrando em mais detalhes em cada tipo desses que citei.
 
-Esse texto está no github no meu repositório, e eu aceito Pull Requests. A ideia é ser a principal parada pra pessoas que não tem ideia do que esperar. Lendo isso aqui essas pessoas podem pelo menos não se sentir perdidas. 
-
 Sintam-se a vontade para entrar em contato se tiver alguma entrevista marcada e não souber o que fazer. Posso também redirecionar para amigos que manjam de algumas empresas ou algumas áreas específicas.
 
 Tem duas seções que omiti por ter poucos dados, mas que talvez seja interessante adicionar:
@@ -395,4 +393,4 @@ Tem duas seções que omiti por ter poucos dados, mas que talvez seja interessan
 - Veteranos migrando ou recentes em liderança
 - Veteranos indo para cargos bem mais sênior (Staff, Principal, etc)
 
-Me deem feedback e me aponte pra pessoas que possam ajudar com esse conteúdo.
+Me deem feedback e me aponte pra pessoas que possam ajudar com esse conteúdo. Esse texto está no [meu github](https://github.com/knelasevero/CrackingtheDevOpsSREOpsInterview), e eu aceito Pull Requests. A ideia é ser a principal parada pra pessoas que não tem ideia do que esperar. Lendo isso aqui essas pessoas podem pelo menos não se sentir perdidas. 
