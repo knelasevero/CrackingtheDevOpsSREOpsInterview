@@ -143,20 +143,20 @@ Para a parte comportamental ainda vale a pena olhar site da empresa. Entender su
 Considerando desafios técnicos, para iniciantes completos (menos de 6 meses de xp), muitas vezes não é necessário nem passar por um desafio propriamente dito. As vezes só testam fluência computacional, como nomear componentes e saber por alto como um computador funciona. É comum testarem resolução de problemas técnicos de uma forma mais próxima da entrevista comportamental, ou ainda, perguntarem sobre sua experiência com o tema. Alguns exemplos seriam:
 
 * `Qual foi o ultimo problema técnico que você teve que resolver, e qual foi sua estratégia para chegar numa solução?`
-* ` Onde você já aplicou CI/CD nas suas experiências pessoais, ou em trabalhos passados?`
+* ` Você já ouviu falar sobre <tal tecnologia>?`
 
 Ambas as perguntas te dão oportunidade para falar de algo técnico de sua escolha. Use isso a seu favor, e escolha algo mais próximo do que você faria na posição pra qual está aplicando. Se você não tiver essa experiência, não tem problema. A questão é aberta justamente pra te dar abertura pra trazer outras coisas. O importante é tentar usar exemplos que você se sinta extremamente confortável para falar, pois a sua motivação na resposta é um fator muito importante.
- 
+
 É raro mais é possível ter desafio "para levar pra casa". Por ser raro para iniciantes completos, prefiro explicar em outra seção.
 
 É também comum uma entrevista técnica em que a pessoa entrevistando te dá um desafio de algo de infra, mesmo que você não saiba nada sobre aquilo, para ver como você se vira junto com ela. Assim como descrevemos antes, a pessoa vai te guiando para ver se pelo menos você consegue fazer perguntas que te sejam úteis. Pois sendo iniciante num emprego é exatamente isso que você vai ter que saber fazer: Boas perguntas.
 
-Por fim, existe as entrevistas com 23489234789 fases e com requisitos exorbitantes para iniciantes. É horrível que isso exista. Como disse no início dessa seção, fazem isso pra pagar menos para uma pessoa iniciante mas super performante, ou alguma pessoa com baixa confiança e auto estima que aceita estar em um nível de senioridade inferior. Também existe empresas que copiam o processo seletivo de FAANMGs, colocando desafios que testam conhecimento de estruturas de dados e algoritmos, e resolução de problemas complexos. Vou falar disso em outra seção.
+Por fim, existem as entrevistas com 23489234789 fases e com requisitos exorbitantes para iniciantes. É horrível que isso exista. Como disse no início dessa seção, fazem isso pra pagar menos para uma pessoa iniciante mas super performante, ou alguma pessoa com baixa confiança e auto estima que aceita estar em um nível de senioridade inferior. Também existe empresas que copiam o processo seletivo de FAANMGs, colocando desafios que testam conhecimento de estruturas de dados e algoritmos, e resolução de problemas complexos. Vou falar disso em outra seção.
 
 
 # Alguma Experiencia na Área
 
-Vou evitar de propósito os níveis de senioridade clássicos da indústria nesse texto, mas se fosse pra inserir aqui, insira Júnior. Uma pessoa que tem alguns projetos pessoais, ja teve exposição à algumas tecnologias, fez um curso um pouco mais longo com mão na massa, talvez instalou o linux e está tentando usar no dia a dia ou talvez fez algum estágio por algum período de tempo.
+Vou evitar de propósito os níveis de senioridade clássicos da indústria nesse texto, mas se fosse pra inserir aqui, insira Júnior. Uma pessoa que tem alguns projetos pessoais, ja teve exposição à algumas tecnologias, fez um curso um pouco mais longo com mão na massa, talvez instalou o linux e está tentando usar no dia a dia ou talvez fez algum estágio por algum período de tempo, ou ainda está saindo de alguma faculdade que trouxe esta experiência.
 
 ## Alguma Experiencia na Área - Em Big Tech Corps
 *Pule essa seção se não tem interesse em FAANMG e similares*
@@ -170,7 +170,7 @@ Se você procurar agora por vagas Junior nessas empregas um pouco mais gigantes 
 
 ### Parte comportamental
 
-Considerando as entrevistas de cunho comportamental, o que vai mudar, pra parte de iniciantes, é que eles vão observar se você consegue mostrar mais "evidencias" de que age de acordo com os valores da empresa. Também vão ver se mostra esses valores em situações que tenham um pouco mais de impacto. Isso vai crescendo cada vez mais de acordo com a senioridade. Se te perguntarem "Como foi a ultima vez que você teve que lidar com conflito entre colegas de trabalho" para uma vaga de treinamento para iniciantes talvez venham procurar evidencias de que você tentou desescalar a situação, mas numa vaga Júnior talvez tentem ver se vc também agiu de alguma maneira que achasse a causa real do conflito para resolver. Assim como na seção anterior, ler e internalizar o que a empresa divulga sobre sua cultura interna é importante. E pode parecer artificial, mas faz toda diferença ensaiar possíveis respostas para essas perguntas (principalmente se a entrevista não for na sua lingua materna). Leia sobre os guias culturais da empresa, procure exemplos de perguntas no Glassdoor e outras plataformas, e ensaie possíveis respostas. Mesmo que perguntem outras coisas, vai conseguir se virar muito melhor assim por estar na mesma vibe.
+Considerando as entrevistas de cunho comportamental, o que vai mudar, pra parte de iniciantes, é que eles vão observar se você consegue mostrar mais "evidencias" de que age de acordo com os valores da empresa. Também vão ver se mostra esses valores em situações que tenham um pouco mais de impacto. Isso vai crescendo cada vez mais de acordo com a senioridade. Se te perguntarem "Como foi a ultima vez que você teve que lidar com conflito entre colegas de trabalho" para uma vaga de treinamento para iniciantes talvez venham procurar evidencias de que você tentou desescalar a situação, mas numa vaga Júnior talvez tentem ver a sua atitude, em busca de achar a causa real do conflito para resolver. Assim como na seção anterior, ler e internalizar o que a empresa divulga sobre sua cultura interna é importante. E pode parecer artificial, mas faz toda diferença ensaiar possíveis respostas para essas perguntas (principalmente se a entrevista não for na sua lingua materna). Leia sobre os guias culturais da empresa, procure exemplos de perguntas no Glassdoor e outras plataformas, e ensaie possíveis respostas. Mesmo que perguntem outras coisas, vai conseguir se virar muito melhor assim por estar na mesma vibe.
 
 ### Parte técnica
 
@@ -220,7 +220,7 @@ Para a parte técnica, aqui começa a ficar um pouco mais interessante. Na seç�
 
 Perceba que esse é um desafio que daria pra passar tanto pra Juniors e para Plenos. Talvez deixando claro para Juniors que não é necessariamente esperado que eles resolvam o problema. Mas ao final da semana a pessoa entrevistadora pareia com você e você tem a oportunidade de mostrar tudo que tentou, o que não conseguiu, e o que conseguiu. Você tem a oportunidade de mostrar as partes da pipeline que entendeu, e as partes que não entendeu. E daí vai ser avaliado em cima disso (Pedi autorização, esse é um desafio de uma empresa pequena do aí do Brasil, e eu acho maneiro).
 
-É claro que ainda temos entrevistas técnicas de perguntas e respostas para vagas de infra dessa seção também. Para pouca experiência na area, não costumam pegar muito pesado, então coisas que perguntam são mais em cima da sua experiência. Se você disser que mexeu bastante com Cloud, é possível que perguntem "Que serviço da AWS você usaria para guardar diversos arquivos de imagens?" e a resposta seria S3. Se você disser que fez alguns projetos pessoais com CI/CD no github actions, devem te perguntar como você configurou, quais actions usou, como controlou credenciais e tudo mais. Pra uma vaga Junior é bacana casar a pouca experiencia que você tem com a necessidade e o que a empresa está fazendo. Mas talvez mais importante que isso é mostrar a capacidade de aprender rápido o que quer que a empresa esteja usando, mostrando que o que você aprendeu até esse ponto foi assimilado com sucesso.
+É claro que ainda temos entrevistas técnicas de perguntas e respostas para vagas de infra dessa seção também. Para pouca experiência na area, não costumam pegar muito pesado, então coisas que perguntam são mais em cima da sua experiência. Se você disser que mexeu bastante com Cloud, é possível que perguntem "Que serviço da AWS você usaria para guardar diversos arquivos de imagens?" e a resposta seria S3. Se você disser que fez alguns projetos pessoais com CI/CD no github actions, devem te perguntar como você configurou, quais actions usou, como controlou credenciais e tudo mais. Pra uma vaga Junior é bacana casar a pouca experiencia que você tem com a necessidade e o que a empresa está fazendo. Mas talvez mais importante que isso é mostrar a capacidade de aprender rápido o que quer que a empresa esteja usando, mostrando que o que você aprendeu até esse ponto foi assimilado com sucesso. Da mesma forma para uma pessoa iniciante, busque dar respostas e contextos em que você consiga se mostrar motivado com o assunto.
 
 É possível que façam perguntas não relacionadas a sua experiencia para as coisas que a empresa precisa de fato que a pessoa já saiba para a vaga. Mas sendo uma vaga Junior, ainda é possível que relevem você não saber, se mostrar outras qualidades.
 
@@ -235,9 +235,9 @@ Aqui estou falando de pessoas com experiencia real de produção. Aqui dá pra e
 
 ### Parte comportamental
 
-Para plenos e seniors aplicando para Big Tech Corps, a parte das entrevistas comportamentais vai esperar que basicamente todas as respostas mostrem algum aspecto dos valores da empresa exposto explicitamente (lembre-se, pesquise a empresa), e muitas vezes vai esperar que respostas mostrem mais do que um desses valores. Se está numa entrevista para Amazon (só um exemplo), e é uma pergunta sobre como lidou com treta de cliente, a expectativa é mostrar evidentemente pontos de [Customer Obsession](https://www.amazon.jobs/de/principles) ou talvez [Think Big](https://www.amazon.jobs/de/principles) juntos na mesma resposta. Querem ver onde você foi extremamente eficiente, onde parou pra planejar e onde avançou para correr um risco calculado. É difícil fingir tudo isso, é possível, mas é facilmente verificável. Pense em situações que você realmente demonstrou esses valores e saiba engrandecer a história. Contar histórias é a habilidade mais subestimada da nossa indústria.
+Para plenos e seniors aplicando para Big Tech Corps, a parte das entrevistas comportamentais vai esperar que basicamente todas as respostas mostrem algum aspecto dos valores da empresa exposto explicitamente (lembre-se, pesquise a empresa), e muitas vezes vai esperar que respostas mostrem mais do que um desses valores. Se está numa entrevista para Amazon (só um exemplo), e é uma pergunta sobre como lidou com treta de cliente, a expectativa é mostrar evidentemente pontos de [Customer Obsession](https://www.amazon.jobs/de/principles) ou talvez [Think Big](https://www.amazon.jobs/de/principles) juntos na mesma resposta. Querem ver onde você foi extremamente eficiente, onde parou pra planejar e onde avançou para correr um risco calculado. É comum passar por fases de triagem em que você tem que mostrar esses valores por meio de testes, para só então conseguir um slot em entrevista. É difícil fingir tudo isso, é possível, mas é facilmente verificável. Pense em situações que você realmente demonstrou esses valores e saiba engrandecer a história. Contar histórias é a habilidade mais subestimada da nossa indústria.
 
-Não se esqueça de ter na ponta da língua respostas para perguntas na área de metodologias, processo e de como fazer times serem efetivos. É esperado de pessoas com mais experiência que saibam um tanto sobre o que funciona e o que não funciona para operar times eficientes. DevOps é sobre compartilhamento, observabilidade, LEAN, automação e cultura. Cultura e LEAN são botados de lado de vez em quando. Lembre disso também.
+Não se esqueça de ter na ponta da língua respostas para perguntas na área de metodologias, processo e de como fazer times serem efetivos. É esperado de pessoas com mais experiência que saibam um tanto sobre o que funciona e o que não funciona para operar times eficientes. DevOps é sobre compartilhamento, observabilidade, LEAN, automação e cultura. Cultura e LEAN são botados de lado de vez em quando. Lembre disso também. 
 
 ### Parte técnica
 
@@ -249,27 +249,39 @@ Para vagas de infra não necessariamente vão esperar a resposta otimizada, mas 
 
 Na entrevista técnica vão testar seus conhecimentos de Redes, Cloud, linux, ferramentas e práticas DevOps/SRE em geral. É comum ter uma call com um engenheiro onde ele vai conversando contigo e te perguntando várias coisas e pedindo para você elaborar em cima do assunto. Exemplo:
 
-```
-    Como você resolveria um problema em que um dos microserviços do seu time não está conseguindo acessar seu respectivo banco de dados?
-    Como você faria o debug desse problema?
-    Se achasse uma solução, como evitaria que isso acontecesse de novo?
-    Se o problema fosse DNS, o que você faria?
-```
+* `Como você resolveria um problema em que um dos microserviços do seu time não está conseguindo acessar seu respectivo banco de dados?`
+* `Como você faria o debug desse problema?`
+* `Se achasse uma solução, como evitaria que isso acontecesse de novo?`
+* `Se o problema fosse DNS, o que você faria?`
+
 
 Mas é claro que na entrevista isso poderia ser mais orgânico, se o modelo de entrevista da empresa der liberdade para a pessoa entrevistando seguir do jeito que ela quiser. O ponto é que a pessoa entrevistando te daria um problema, e o que ela quer ver é como você triangularia uma solução.
 
 Outras perguntas um pouco mais difíceis que é possível ver nesse nível em Big Tech Corps:
 
-```
-    Explique interrupções e Interrupt Handlers no Linux
-    Você precisa deletar um diretório com milhões de arquivos. Como fazer isso eficientemente?
-    Qual sua preferencia de estratégia de deploy? Push ou Pull Strategy?
-    A latência de um dos serviços está muito alta, qual seria sua primeira suposição da causa, e como resolveria?
-    Como otimizar debugging de pipelines do Jenkins (ou qualquer ferramenta de Ci semelhante)?
-    Como definir um SLO que faça sentido?
-    Pergunta específicas de alguma tecnologia também são possíveis, como: Como você permitiria SREs a fazer tasks de admin no seu cluster kubernetes, mas bloquearia Devs, deixando-os só dar get em recursos em namespaces específicas?
-```
+* `Explique interrupções e Interrupt Handlers no Linux`
+* `Você precisa deletar um diretório com milhões de arquivos. Como fazer isso eficientemente?`
+* `Qual sua preferencia de estratégia de deploy? Push ou Pull Strategy`
+* `A latência de um dos serviços está muito alta, qual seria sua primeira suposição da causa, e como resolveria?`
+* `Como definir um SLO que faça sentido? Qual SLIs você usaria, e porque? Como você acompanharia o SLO?`
 
+
+Perguntas específicas de alguma tecnologia também são possíveis, como: 
+
+* `Como você permitiria SREs a fazer tasks de admin no seu cluster kubernetes, mas bloquearia Devs, deixando-os só dar get em recursos em namespaces específicas?`
+* `Como otimizar debugging de pipelines do Jenkins (ou qualquer ferramenta de Ci semelhante)?`
+* `Qual é o output desta linha de comando?`
+```
+cat apache-anon-noadmin.log | \
+awk 'function ri(n) \
+{  return int(n*rand()); }  \
+BEGIN { srand(); }  { if (! \
+($5 in jack)) {  \
+jack[$5] = sprintf("%d.%d.%d.%d", \
+ri(255), ri(255)\
+, ri(255), ri(255)); } \
+$5 = jack[$5]; print __g5_token5b610ba53dbe4  }'`
+```
 ### Parte System Design
 
 Aqui é clássico perguntarem algo do tipo: `Como você faria o design de sistema de um clone do instagram, começando simples e depois chegando a conseguir aguentar a mesma escala do instagram real?` (vou dar referencias pra como se preparar pra esse tipo de coisa no final). Se for remoto devem te dar acesso a algum mural do [Miro](miro.com) ou do [draw.io](draw.io) (ou similares) e te pedir pra ir desenhando um diagrama e explicando suas escolhas (claro, te fazendo perguntas e vão te guiando ao mesmo tempo). É normal usarem essa fase pra perguntarem algumas coisas genéricas de SysDesign antes de fazer a grande pergunta de como fazer um sistema inteiro. Algo como `Como decidir entre bancos de dados NoSQL ou SQL para um novo projeto?`. É esperado que você faça mais perguntas de volta, para ter mais contexto.
@@ -301,7 +313,7 @@ Vamos de novo ao desafio de levar para casa. O desafio que citei anteriormente s
 
 Esse é um tipo de desafio que toma bastante tempo tanto do candidato quanto da pessoa entrevistadora, pois corrigir isso não é uma tarefa rápida. Dependendo do tempo que leva pra fazer esse tipo de desafio, tem até empresas que pagam o seu tempo fazendo o desafio, mesmo que você não seja selecionado, para respeitar o seu tempo investido nisso. Sinta-se ainda mais a vontade de cobrar se o desafio for um dito "problema real da empresa", e que você está resolvendo no processo seletivo. Se é um problema real, de trabalho, todos concordamos aqui que deve ser pago, né 😂?!
 
-É possível também utilizarem os ambientes de desafios de infra do Rackerrank (ou similar) em que te dão acesso ssh temporário a uma máquina e você tem que performar algumas tarefas descritas no enunciado nessa máquina. No fim o Rackerrank vai executar um script nessa máquina para verificar se a tarefa foi feita. Exemplo:
+É possível também utilizarem os ambientes de desafios de infra do Hackerrank (ou similar) em que te dão acesso ssh temporário a uma máquina e você tem que performar algumas tarefas descritas no enunciado nessa máquina. No fim o Hackerrank vai executar um script nessa máquina para verificar se a tarefa foi feita. Exemplo:
 
 ```
     Clique no botão avançar para ter acesso ssh à máquina desse desafio. Quando tiver acesso a máquina, performe as seguintes tarefas:
@@ -314,24 +326,39 @@ Esse é um tipo de desafio que toma bastante tempo tanto do candidato quanto da 
     - Faça que o usuário com a seguinte chave pública [CHAVEPUBLICA consiga acessar essa máquina por ssh quando precisar, no usuário user123
 ```
 
-A empresa vai configurar o Rackerrank (ou similar) para te deixar ter acesso à maquina por algum período de tempo, e você tem esse tempo pra executar as tarefas. De vez em quando é tempo mais do que suficiente. Mas as vezes a empresa dá pouco tempo de propósito pra ver como quanto você consegue fazer, e como você gerencia seu tempo.
+A empresa vai configurar o Hackerrank (ou similar) para te deixar ter acesso à maquina por algum período de tempo, e você tem esse tempo pra executar as tarefas. De vez em quando é tempo mais do que suficiente. Mas as vezes a empresa dá pouco tempo de propósito pra ver como quanto você consegue fazer, e como você gerencia seu tempo. Nesses casos, o importante é não ficar nervoso, e buscar fazer as partes mais importantes primeiro. Vocề consegue entender quais são as partes mais importantes nas entrevistas iniciais e comportamentais, onde a empresa te explica o que ela espera de você (aqui, se for uma vaga com foco em segurança você tem que buscar fazer ações de segurança primeiro, enquanto uma vaga que tem foco em disponibilidade buscaria corrigir algum problema na aplicação primeiro, etc.)
 
-Exite também a possibilidade de a empresa marcar uma entrevista em que você vai resolver um problema JUNTO COM a pessoa entrevistadora. Vocês vão parear num problema razoavelmente real, e o que querem testar é se você consegue colaborar para solução de problemas, e se você consegue se comunicar efetivamente para alcançar um objetivo. É similar a uma entrevista comum, mas a diferença é que a pessoa entrevistadora vai ativamente estar querendo solucionar o problema também, tentando te ajudar em partes.
+Exite também a possibilidade da empresa marcar uma entrevista em que você vai resolver um problema JUNTO COM a pessoa entrevistadora. Vocês vão parear num problema razoavelmente real, e o que querem testar é se você consegue colaborar para solução de problemas, e se você consegue se comunicar efetivamente para alcançar um objetivo. É similar a uma entrevista comum, mas a diferença é que a pessoa entrevistadora vai ativamente estar querendo solucionar o problema também, tentando te ajudar em partes.
 
 Claro, ainda existe a entrevista clássica em que te perguntam coisas a respeito de redes, linux, infra, Cloud e tudo mais. Assim como nas descrições que fiz anteriormente, a ideia é sempre mostrar seu raciocínio, fazer mais perguntas pra entender o contexto, e chegar numa resposta mais detalhada que for possível.
 
 Mais alguns exemplos clássicos:
 
-```
-    - Como funciona resolução DNS, explique com a maior quantidade de detalhes que conseguir?
-    - Como se resolve problemas de CORS?
-    - Como cookies passam no protocolo HTTP?
-    - Como medir latência e outras métricas de um serviço só com ferramentas cli linux numa máquina?
-    - Como matar um processo que está bloqueando um arquivo?
-    - Que mudanças você faria inicialmente em pipelines de CI que estão muito demoradas?
-    - Um banco de dados gerenciado na cloud está em 100% de CPU, e sua réplica está com replication lag enorme, quais são seus primeiros passos para investigar?
-    - Que serviços da AWS (ou sua cloud favorita) você mais passou raiva, e como geralmente resolve problemas nele?
-```
+* `Como funciona resolução DNS, explique com a maior quantidade de detalhes que conseguir?`
+
+* `Como se resolve problemas de CORS?`
+
+* `Como cookies passam no protocolo HTTP?`
+
+* `Quais as diferenças entre o HTTP/2 e o HTTP/1?`
+
+* `Como funciona o protocolo gRPC e como é possível debuggá-lo?`
+
+* `Como medir latência e outras métricas de um serviço só com ferramentas cli linux numa máquina?`
+
+* `Como matar um processo que está bloqueando um arquivo?`
+
+* `Que mudanças você faria inicialmente em pipelines de CI que estão muito demoradas?`
+
+* `Um banco de dados gerenciado na cloud está em 100% de CPU, e sua réplica está com replication lag enorme, quais são seus primeiros passos para investigar?`
+
+* `Que serviços da AWS (ou sua cloud favorita) você mais passou raiva, e como geralmente resolve problemas nele?`
+
+Mais uma vez, dependendo da vaga, perguntas específicas podem aparecer, como:
+
+* `Como você configuraria um channel do rabbitMQ para propagar comunicação para estes serviços?`
+
+<!-- -Adicionar mais exemplos-->
 
 # Ok Lucas, mas como eu me preparo para algum desses níveis de entrevista?
 
