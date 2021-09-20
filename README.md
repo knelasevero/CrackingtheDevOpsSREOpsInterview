@@ -348,6 +348,11 @@ Com relação a se preparar aqui vão alguns materiais:
     - https://github.com/michael-kehoe/sre-interview
     - https://github.com/trimstray/test-your-sysadmin-skills
     - https://syedali.net/engineer-interview-questions/
+- Para System Design, tem algumas opções:
+    - Tem um exemplo grátis no educative.io: [Designing Instagram](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG?affiliate_id=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=grokking-ci&utm_term=&utm_campaign=Grokking+Coding+Interview+-+USA%2B&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=1871092258&hsa_grp=84009716779&hsa_ad=396821895536&hsa_src=g&hsa_tgt=aud-470210443676:dsa-1287243227699&hsa_kw=&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw4qCKBhAVEiwAkTYsPCLBfcEfprazPM30ZIF_ordaT0KvJXTFplm0wTY4tdxiahPneLnbbBoCnQEQAvD_BwE)
+    - Você pode pagar o educative.io para acessar os outros recursos
+    - https://github.com/madd86/awesome-system-design
+    - O Youtube tem muito recurso grátis sobre isso, por exemplo, uma pesquisa simples: [System Design of Twitter](https://www.youtube.com/results?search_query=system+design+twitter)
 - Pegue créditos grátis em clouds e use de playground para tudo:
     - http://cloud.google.com/free
     - https://aws.amazon.com/free
