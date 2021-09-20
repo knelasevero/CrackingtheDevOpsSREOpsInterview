@@ -39,7 +39,7 @@ Se você é iniciante, nesse ponto já deve ter se deparado com algumas siglas n
 
 **FAANMG:** Conjunto das empresas que pagam melhor no mercado de TI (consequentemente um tanto mais difíceis de entrar). Facebook, Amazon, Apple, Netflix, Microsoft e  Google. Essa sigla muda e de vez em quando inclui ou exclui algumas empresas. Mas no geral se pronuncia "[fang](https://www.macmillandictionary.com/dictionary/british/fang_1)".
 
-**Big Tech Corps:** São empresas que utilizam pesadamente a tecnologia como core do negócio, ou bem próxima ao core do negócio. as FAANMG são Big Tech Corps, mas esta lista inclui também outros gigantes, como Spotify. Pela necessidade da tecnologia, costumam ter um processo seletivo mais intenso, com testes de estrutura de dados e algoritmos pra todas as vagas, mesmo não sendo vagas de programação.
+**Big Tech Corps:** São empresas que utilizam pesadamente a tecnologia como core do negócio, ou bem próxima ao core do negócio. as FAANMG são Big Tech Corps, mas esta lista inclui também outros gigantes aqui. Pela necessidade da tecnologia, costumam ter um processo seletivo mais intenso, com testes de estrutura de dados e algoritmos pra todas as vagas, mesmo não sendo vagas de programação.
 
 **Brute Force:** Uma solução não otimizada que tenta varrer todas as possibilidades até achar a resposta desejada.
 
@@ -118,7 +118,7 @@ Um exemplo de pergunta muito simples de infra pode ser:
 
 ```
 
-E nesse caso teria que explicar as permissões, número de links, nome do dono e assim por diante. Nesse nível, ainda não devem esperar o significado do [escalonamento de permissões](https://en.wikipedia.org/wiki/Setuid) mas definitivamente ganha pontos souber.
+E nesse caso teria que explicar as permissões, número de links, nome do dono e assim por diante. Na maioria dessas entrevistas não é esperado que venha com a resposta de cara. A pessoa entrevistando vai procurar ver seu raciocínio, te perguntar o que você está pensando, e tentar te guiar sem te dar a resposta (depende da empresa, claro). Também não se preocupe se você não souber explicar tudo que foi mostrado. Se preocupe em dizer tudo que você sabe, e pontue as coisas que você não sabe dizer (algumas empresas até valorizam este tipo de transparência).
 
 Esses dois são exemplos para saber o que poderia esperar nesse nível, e é claro que a empresa perguntaria mais perguntas e possivelmente mandaria um desafio online com várias partes.
 
@@ -405,6 +405,7 @@ Com relação a se preparar aqui vão alguns materiais:
     - https://www.redhat.com/sysadmin/troubleshooting-system-performance
     - https://www.redhat.com/sysadmin/beginners-guide-network-troubleshooting-linux
     - https://github.com/bregman-arie/devops-exercises
+    - Para marcar Mock Interviews com pessoas da comunidade existe o [pramp.com](https://www.pramp.com/#/). É especialmente útil se estiver aplicando para empresas de fora. Já treina inglês e as entrevistas em si. Para treinar entrevistas em Português marque com conhecidos (ou me dá um toque!).
     - Me deêm um toque caso precisem que esse tipo de coisa acima seja traduzida.
 
 
