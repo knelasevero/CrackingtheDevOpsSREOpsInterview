@@ -1,44 +1,45 @@
 # Crackeando a entrevista de DevOps/SRE/Ops
 
-Queria escrever esse texto a muito tempo, mas acabei adiando bastante. A ideia aqui é publicar um guia que ajude pessoas querendo entrar no mundo de infraestrutura indo mais pro lado de Cloud e DevOps/SRE, **mas estou focando nas entrevistas**. Eu sou mentor de algumas pessoas que precisam desse tipo de guia, então vou aproveitar para compartilhar aqui.
+Queria escrever esse texto há muito tempo, mas acabei adiando bastante. A ideia aqui é publicar um guia que ajude pessoas querendo entrar no mundo de infraestrutura, indo mais pro lado de Cloud e DevOps/SRE, **mas estou focando nas entrevistas**. Eu sou mentor de algumas pessoas que precisam desse tipo de guia, então vou aproveitar para compartilhar aqui.
 
 Quero deixar super claro repetidamente aqui nesse texto que o que vamos mostrar aqui são só exemplos para ter uma ideia do que esperar. E que existem inúmeras empresas que tem processo seletivo altamente zuado que não dá muito pra abranger aqui. Talvez eu faça um outro blog post sobre processos zuados e como se preparar pra eles caso vocês peçam. Sem dúvida, os processos de FAANMGs são zuados né, então já está parcialmente coberto. Mas vamos lá...
 
 # Um pouco sobre a experiencia que tenho (temos) na area (Opcional - pode pular)
 
-Fiz parte de vários processos seletivos tanto como pessoa entrevistada e como pessoa entrevistadora. Como é de praxe na nossa área técnica: Não existe bala de prata pra passar nessas entrevistas. Existe um certo padrão, e é o que vou explorar aqui, mas o processo em detalhe ainda depende muito da empresa pra qual você vai aplicar. Vou tentar trazer minha experiencia e a experiencia de inúmeros amigos que tenho trabalhando na area. Mas entenda que nossa experiencia é limitada ao que a gente teve acesso, e não necessariamente é aplicável a você. Ainda assim quero escrever aqui algo que seja útil para a maioria que vier ler.
+Fiz parte de vários processos seletivos tanto como pessoa entrevistada e como pessoa entrevistadora. Como é de praxe na nossa área técnica: Não existe bala de prata pra passar nessas entrevistas. Existe um certo padrão, e é o que vou explorar aqui, mas o processo em detalhe ainda depende muito da empresa pra qual você vai aplicar. Vou tentar trazer minha experiencia e a experiencia de inúmeros amigos que tenho trabalhando na area. Mas entenda que nossa experiencia é limitada ao que a gente teve acesso, e não necessariamente é aplicável a você. Ainda assim, acreditamos que este texto vai ser capaz de ajudar quem estiver lendo.
 
-Meu background é meio bagunçado. Eu comecei a vida acadêmica em engenharia eletrônica, mas depois de um intercambio, resolvi mudar pra engenharia de software. No mercado fui meio que de tudo, exceto front-end. De Backend a sysAdmin. De SRE a Ops puro. De mantenedor Open Source a Cloud Engineer. Os amigos que estou consultando para esse texto também tem um background parecido, mas claro que com suas especializações em areas de TI diferentes. A ideia é trazer perspectivas que não sejam só minhas.
+Meu background é meio bagunçado. Eu comecei a vida acadêmica em engenharia eletrônica, mas depois de um intercâmbio, resolvi mudar pra engenharia de software. No mercado, já fui meio que de tudo, exceto front-end. De Backend a sysAdmin. De SRE a Ops puro. De mantenedor Open Source a Cloud Engineer. Os amigos que estou consultando para esse texto também tem um background parecido, mas claro que com suas especializações em areas de TI diferentes. A ideia é trazer perspectivas que não sejam só minhas.
 
 # Um pequeno glossário (Opcional - pode pular)
 
-Se você é iniciante, nesse ponto já deve ter se deparado com algumas siglas nesse texto que te fizeram abrir o google. Vou tentar fazer pequenas definições aqui, que sejam simples o suficiente, para que o texto se torne um pouco mais entendível. Usarei um pouco de licença poética aqui para não dar definições muito longas ou detalhadas. Mas darei links para quem quiser ir mais a fundo. Não leia essas definições agora. Volte nas definições quando a palavra for usada no texto em algum contexto e precisar saber do que se trata.
+Se você é iniciante, nesse ponto já deve ter se deparado com algumas siglas nesse texto que te fizeram abrir o google. Vou tentar fazer algumas definições aqui, que sejam simples o suficiente, para que o texto se torne um pouco mais entendível. Usarei um pouco de licença poética aqui para não dar definições muito longas ou detalhadas, então lembre-se disso antes de explicá-las para outras pessoas. Para quem quiser, tem alguns links que exploram os temas mais a fundo. Quando você precisar do contexto de alguma sigla, sugiro que volte aqui para saber do que se trata.
 
-**DevOps:** É um movimento, ou conjunto de práticas para diminuir o clássico conflito entre desenvolvimento e operações (além de ter a intenção de aumentar velocidade, qualidade e observabilidade de entregas/sistema). Desenvolvimento sempre foi recompensado por novas features, mudanças e isso gera instabilidade. Operação sempre foi recompensado por manter servidores no ar, estabilidade, falta de mudança. DevOps veio pra mudar/Balancear isso. DevOps hoje em dia também pode ser o nome de um cargo. Isso já foi controverso, pois pode fugir a alguns preceitos, mas já aceitamos que vão continuar chamando cargos de DevOps e é a vida. Se quiser ler mais: [Definição de DevOps pela AWS](https://aws.amazon.com/devops/what-is-devops/#:~:text=DevOps%20is%20the%20combination%20of,development%20and%20infrastructure%20management%20processes.).
 
-**Dev:** Times de desenvolvimento, Programadora(e)s, Engenheira(o)s de Software, pessoas envolvidas na construção do código do produto em si.
+**Dev - Desenvolvimento:** são Programadora(e)s, Engenheira(o)s de Software, pessoas envolvidas na construção do código do produto em si.
 
-**Ops:** Operações, Administradora(e)s de redes, Administradora(e)s de sistemas, pessoas envolvidas em manter servidores e infraestrutura adjacente em pé.
+**Ops - Operações:** são Administradora(e)s de redes, Administradora(e)s de sistemas, pessoas envolvidas em manter servidores e infraestrutura adjacente em pé.
 
-**SRE:** É a sigla em ingles para Site Reliability Engineer. Ou a tradução oficial: Engenharia de Confiabilidade. O termo foi cunhado pela Google, e é a resposta que tiveram para o conflito citado na definição de DevOps acima. [Tem um vídeo da Google](https://www.youtube.com/watch?v=uTEL8Ff1Zvk&ab_channel=GoogleCloudTech) dizendo que SRE é a real implementação de DevOps. Ou seja, DevOps é o conceito, o movimento, e SRE é o cargo, a implementação. O ponto é que a Google escreveu um livro que define as práticas e o que eles de fato fazem internamente para aplicar Engenharia de Confiabilidade. Dentro desse livro abordam muita coisa que não convém citar aqui, mas destaques são: Error-budgets, Blameless/Just Culture, SL[I,O,A].
+**DevOps - Dev + Ops:** É um movimento, ou conjunto de práticas para diminuir o clássico conflito entre desenvolvimento e operações (além de ter a intenção de aumentar velocidade, qualidade e observabilidade de entregas/sistema). Desenvolvimento sempre foi recompensado por novas features, mudanças e isso gera instabilidade. Operação sempre foi recompensado por manter servidores no ar, estabilidade, falta de mudança. DevOps veio pra mudar/Balancear isso. DevOps hoje em dia também pode ser o nome de um cargo. Isso já foi controverso, pois pode fugir a alguns preceitos, mas já aceitamos que vão continuar chamando cargos de DevOps e é a vida. Se quiser ler mais: [Definição de DevOps pela AWS](https://aws.amazon.com/devops/what-is-devops/#:~:text=DevOps%20is%20the%20combination%20of,development%20and%20infrastructure%20management%20processes.).
 
-**SLA:** É a sigla em ingles para Service Level Agreement. Ou a tradução para o português: Acordo de Nível de Serviço. SLA é a promessa, normalmente feita com relação a disponibilidade, que um provedor faz a seus usuários ou clientes. Se você lança um serviço agora para um cliente, e promete SLA de 99.9%, quer dizer que você está com o serviço de pé o ano todo, mas pode cair por 8.77 horas no ano. Se seu SLA é de 99.99%, só pode cair por 52.60 minutos no ano. Cada nove depois da virgula dificulta cada vez mais manter essa promessa. Se quiser ler mais: [SRE fundamentals 2021: SLIs vs SLAs vs SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla)
+**SRE - Engenheira de Confiabilidade:** É a sigla em ingles para Site Reliability Engineer. Ou a tradução oficial: Engenharia de Confiabilidade. O termo foi cunhado pela Google, e é a resposta que tiveram para o conflito citado na definição de DevOps acima. [Tem um vídeo da Google](https://www.youtube.com/watch?v=uTEL8Ff1Zvk&ab_channel=GoogleCloudTech) dizendo que SRE é a real implementação de DevOps. Ou seja, DevOps é o conceito, o movimento, e SRE é o cargo, a implementação. O ponto é que a Google escreveu um [livro](https://www.amazon.com.br/Engenharia-Confiabilidade-Google-Administra-Sistemas/dp/8575225170/ref=asc_df_8575225170/?tag=googleshopp00-20&linkCode=df0&hvadid=379787347388&hvpos=&hvnetw=g&hvrand=14691619429787364739&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-809202560056&psc=1) que define as práticas e o que eles de fato fazem internamente para aplicar Engenharia de Confiabilidade. Dentro desse livro abordam muita coisa que não convém citar aqui, mas destaques são: Error-budgets, Blameless/Just Culture, SL[I,O,A].
 
-**SLO:** É a sigla em ingles para Service Level Objective. Ou a tradução para o português: Objetivo de Nível de Serviço. SLO é similar ao SLA, mas o SLA é mais realista, o SLO é mais ambicioso. É o objetivo interno do seu time. Na verdade é o SLO que se escolhe junto com seu time de produto e infra e negócio. Quanto mais noves após a virgula, mais caro é manter disponibilidade. Definindo o SLO com cuidado, o próximo passo é definir o SLA, com uma margem de segurança. Se quiser ler mais: [SRE fundamentals 2021: SLIs vs SLAs vs SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla)
+**SLA - Acordo de Nível de Serviço:** É a sigla em inglês para Service Level Agreement. SLA é uma garantia (na maior parte das vezes garantida por um documento contratual) feita com relação a disponibilidade, que um prestador de serviços faz a seus usuários ou clientes. Este termo existe fora do mundo de cloud também, por exemplo com empresas de energia elétrica, ou de internet. Se você lança um serviço agora para um cliente, e garante um SLA de 99.9%, quer dizer que você estará com o serviço de pé o ano todo, mas pode cair por 8,77 horas no ano. Se seu SLA é de 99.99%, só pode cair por ~52 minutos no ano. Cada nove depois da virgula dificulta cada vez mais manter essa promessa. Se quiser ler mais: [SRE fundamentals 2021: SLIs vs SLAs vs SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla)
 
-**SLI:** É a sigla em ingles para Service Level Indicator. Ou a tradução para o português: Indicador de Nível de Serviço. SLIs são o conjunto de métricas que se está medindo. Pode se medir frequência de erros, uptime, latência e outras métricas. Se quiser ler mais: [SRE fundamentals 2021: SLIs vs SLAs vs SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla)
+**SLO - Objetivo de Nível de Serviço:** É a sigla em ingles para Service Level Objective. O SLO é similar ao SLA, mas enquanto o SLA é uma ''obrigação'', o SLO é mais como uma meta (para prestarmos um serviço de maior disponibilidade para nosso usuário). É o objetivo interno do seu time. Na verdade é o SLO que se escolhe junto com seu time de produto e infra e negócio. Quanto mais noves após a virgula, mais caro é manter disponibilidade. Definindo o SLO com cuidado, o próximo passo é definir o SLA, com uma margem de segurança. Se quiser ler mais: [SRE fundamentals 2021: SLIs vs SLAs vs SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla)
+
+**SLI - Indicador de Nível de Serviço:** É a sigla em ingles para Service Level Indicator. SLIs são as métricas utilizadas para definir os SLOs. Pode se medir frequência de erros, uptime, latência e outras métricas. Apesar de já ter visto alguns locais que definem uma série de SLIs para um SLO, esta não costuma ser uma boa prática. Se quiser ler mais: [SRE fundamentals 2021: SLIs vs SLAs vs SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla)
 
 **Error Budget:** É uma das práticas para tentar balancear o conflito entre Devs e Ops (e business). É definir um bom SLO, e definir uma quantidade saudável de erros e instabilidade no ano para usar tranquilamente para fazer mudanças e evoluções. Error Budget é 1-SLO, ou seja se seu SLO é 99.9%, 1-99.9% = 0.1% error budget. Se quiser ler mais: [Example Error Budget Policy](https://sre.google/workbook/error-budget-policy/)
 
-**Blameless/Just Postmortem Culture:** É a prática de sempre documentar falhas e indisponibilidades, mas sem apontar culpados, sempre visando achar a causa raíz e apontar melhorias. Além de documentar é de praxe divulgar para que outras partes da organização, ou até outras organizações, aprendam com o mesmo acontecimento. A culpa de falhas é sempre do processo e da organização, pois sempre esperamos o melhor de cada pessoa do time. Seres humanos vão cometer erros, e ao perceber pontos do processo em que esses erros possam ser devastadores, automatize para evitar intervenção humana, ou melhore o processo de revisão do que quer que causou o erro (entre outras formas de **evitar** erros). Culpar e punir pessoas por falhas críticas só vai aumentar a vontade dessas pessoas de não reportar erros. Se quiser ler mais: [Postmortem Culture](https://sre.google/sre-book/postmortem-culture/)
+**Blameless/Just Postmortem Culture:** É a prática de sempre documentar falhas e indisponibilidades, mas sem apontar culpados, sempre visando achar a causa raíz e apontar melhorias. Além de documentar, é de praxe divulgar para que outras partes da organização, ou até outras organizações, aprendam com o mesmo acontecimento. A culpa de falhas é sempre do processo e da organização, pois sempre esperamos o melhor de cada pessoa do time. Seres humanos vão cometer erros, e ao perceber pontos do processo em que esses erros possam ser devastadores, automatize para evitar intervenção humana, ou melhore o processo de revisão, entre outras formas de **evitar** erros. Culpar e punir pessoas por falhas críticas só vai aumentar a vontade dessas pessoas de não reportar erros, o que tem um impacto de longo prazo na capacidade máxima do seu time de cumprir com um SLO. Se quiser ler mais: [Postmortem Culture](https://sre.google/sre-book/postmortem-culture/)
 
-**IC:** É a sigla em ingles para Individual Contributor. É basicamente dizer que sua posição não lidera ou gerencia nenhuma outra pessoa do time. Pode liderar tópicos, ou partes técnicas, mas não gerencia pessoas. Dependendo da empresa da pra crescer bastante e continuar sendo IC. 
+**IC - Contribuinte Individual:** É a sigla em ingles para Individual Contributor. É basicamente dizer que sua posição não lidera ou gerencia nenhuma outra pessoa do time. Pode liderar tópicos, ou partes técnicas, mas não gerencia pessoas. Dependendo da empresa da pra crescer bastante e continuar sendo IC. 
 
-**Culture Fit:** É o que empresas consideram quando avaliam se você está alinhado com a cultura interna deles. Você é um Fit (voce se adéqua) quando se comporta como eles esperam em determinadas situações.
+**Culture Fit:** É o que empresas consideram quando avaliam se você está alinhado com a cultura interna deles. Você é um Fit (você se adequa) quando se comporta como eles esperam em determinadas situações.
 
 **FAANMG:** Conjunto das empresas que pagam melhor no mercado de TI (consequentemente um tanto mais difíceis de entrar). Facebook, Amazon, Apple, Netflix, Microsoft e  Google. Essa sigla muda e de vez em quando inclui ou exclui algumas empresas. Mas no geral se pronuncia "[fang](https://www.macmillandictionary.com/dictionary/british/fang_1)".
 
-**Big Tech Corps:** Seila. Botei esse termo aí pra facilitar. Pense em FAANMG + empresas adjacentes que são gigantes e ainda aplicam testes de estrutura de dados e algoritmos pra todas as vagas, mesmo não sendo vagas de programação.
+**Big Tech Corps:** São empresas que utilizam pesadamente a tecnologia como core do negócio, ou bem próxima ao core do negócio. as FAANMG são Big Tech Corps, mas esta lista inclui também outros gigantes, como Spotify. Pela necessidade da tecnologia, costumam ter um processo seletivo mais intenso, com testes de estrutura de dados e algoritmos pra todas as vagas, mesmo não sendo vagas de programação.
 
 **Brute Force:** Uma solução não otimizada que tenta varrer todas as possibilidades até achar a resposta desejada.
 
@@ -48,6 +49,7 @@ Se você é iniciante, nesse ponto já deve ter se deparado com algumas siglas n
 
 **Mock Interview:** Pedir pra alguém experiente fingir que é uma pessoa entrevistadora, e fazer uma entrevista de mentira, bem exigente e com verosimilhança.
 
+**CI/CD - Integração e Entrega Contínuas:** Eu diria que é um conjunto de ferramentas e processos para garantir o aumento da qualidade do produto, e consequentemente, o aumento do SLO. São ferramentas que buscam automatizar uma série de verificações e testes, bem como automatizar a entrega de novas funcionalidades ou correção de erros para os usuários (de novo, como forma de minimizar o SLO).
 
 # Pra quem é esse texto
 
@@ -61,10 +63,10 @@ Esse texto é pra todo mundo planejando fazer uma entrevista na área. Vou tenta
 
 Dentro de cada um desses momentos de carreira, vou tentar explicitar alguns perfis de empresa (omitindo parte deles dependendo do perfil):
 
-- Big Tech Corp
+- Big Tech Corps
 - Empresas em geral
 
-E em cada um desses perfis de empresa, além de explicar o que ja vi (e o que meus amigos ja viram), vou dar algum exemplo de desafio próximo do que pode se esperar para ele. Vou obviamente não compartilhar nenhum desafio que esteja protegido por Non Disclosure Agreement. Mas usarei exemplos similares.
+E em cada um desses perfis de empresa, além de explicar o que já vi (e o que meus amigos ja viram), vou dar algum exemplo de desafio próximo do que pode se esperar para ele. Vou obviamente não compartilhar nenhum desafio que esteja protegido por Acordos de Confidencialidade (NDA - Non Disclosure Agreement). Mas usarei exemplos similares.
 
 # Iniciantes
 
@@ -75,21 +77,27 @@ Tendo 0 experiencia na área, nunca ter encostado em ferramentas do mundo DevOps
 ## Iniciantes (menos de 6 meses) - Em Big Tech Corps
 *Pule essa seção se não tem interesse em FAANMG e similares*
 
-**O que esperam:** Conhecimento básico de programação, suficiente para resolver desafios de nível fácil. Conhecimento beeem básico de linux ou alguns projetinhos pessoais tendo brincado com CI/CD e afins. Que consiga se virar e explicar suas soluções pra pessoa entrevistando.
+**O que esperam:** Conhecimento básico de programação, suficiente para resolver desafios de nível fácil. Conhecimento bem básico de linux ou alguns projetinhos pessoais tendo brincado com CI/CD e afins. Que consiga se virar e explicar suas soluções pra pessoa entrevistando.
 
 Espere pelo menos uma entrevista comportamental e algum desafio/questionário técnico em tempo real (podem ter outras fases, mas essas duas são sempre inclusas). 
 
 ### Parte comportamental
 
-Essas empresas suficientemente grandes tem princípios de sua cultura bem estabelecidos e divulgados, e por conta disso se preparar para a entrevista comportamental é razoavelmente simples. O que querem testar é se você é um Culture Fit. Para Amazon testam se você demonstra alguns dos [16 Leadership Principles](https://www.amazon.jobs/de/principles), para Google testam se você é [Googley](https://www.thinkwithgoogle.com/future-of-marketing/emerging-technology/missions-that-matter/) o suficiente. Só dei esses dois exemplos por serem bem evidentes, entretanto, não estou dizendo para considerar somente FAANMGs (inclusive, para iniciantes, provavelmente melhor não considerar FAANMG de jeito nenhum, se não for algo muito importante para você). Considerando outras empresas grandes é também possível achar indícios de como sua cultura é internamente, principalmente em blogs, e possivelmente páginas do site da empresa. 
+Essas empresas suficientemente grandes tem princípios de sua cultura bem estabelecidos e divulgados, e por conta disso se preparar para a entrevista comportamental é razoavelmente simples. O que querem testar é se você é um Culture Fit. Para Amazon testam se você demonstra alguns dos [16 Leadership Principles](https://www.amazon.jobs/de/principles), para Google testam se você é [Googley](https://www.thinkwithgoogle.com/future-of-marketing/emerging-technology/missions-that-matter/), e já no iFood testam se você é um [I'm a Food Lover](https://institucional.ifood.com.br/comunidade). É muito importante que você dedique uma parte do seu tempo, assim que passar pela triagem de currículo, para estudar sobre a cultura do lugar. Leia os blogs, posts em redes sociais, e se possível, converse com pessoas que já estão dentro.
 
-Exemplos de perguntas que podem rolar aqui: `Me dê um exemplo de uma situação em que você não alcançou a expectativa de um cliente ou de alguém. Como você lidou e o que teve que fazer para contornar a situação?`. 
+Exemplos de perguntas que podem rolar aqui: 
+* `Me dê um exemplo de uma situação em que você não alcançou a expectativa de um cliente ou de alguém. Como você lidou e o que teve que fazer para contornar a situação?`. 
+
+Existem alguns processos seletivos em que essas perguntas não são entregues 'de mão beijada'. Nesse caso, eles esperam que você use na sua resposta os elementos da cultura da empresa. Um exemplo de pergunta que tenta capturar isso está aqui embaixo:
+* `Me conte mais sobre suas ambições`
+* `O que você fez nos últimos 3 anos que mais te desafiou?`
 
 Talvez sua resposta já esteja na ponta da lingua, mas saber da cultura da empresa te ajuda a preparar algo que alinhe com o que a empresa quer escutar. Olhar o Glassdoor da empresa ajuda bastante também, pois pessoas cadastram perguntas que são frequentes da empresa lá.
 
+
 ### Parte técnica
 
-Para o desafio técnico, se a empresa for suficientemente grande, espere com certeza que o teste vá ser ao vivo. Se não for ao vivo, com certeza vai ser algo com correção automática (e provavelmente pode ser as duas coisas). O motivo disso é que essas empresas irão procurar economizar ao máximo para não ter um engenheiro que poderia estar fazendo software gastando muito tempo corrigindo depois o que você fez. Então nada de desafio para "levar para casa" aqui, pois dá trabalho pra corrigir. Algo que é comum é pedir para o candidato resolver um problema simples (auto-corrigível) no Hackerrank (ou similar), e em seguida fazer uma entrevista técnica onde um engenheiro te pergunta algumas coisas por algum tempo.
+Para o desafio técnico, se a empresa for suficientemente grande, espere com certeza que o teste vá ser ao vivo. Se não for ao vivo, com certeza vai ser algo com correção automática (e provavelmente pode ser as duas coisas). O motivo disso é que essas empresas irão procurar economizar ao máximo para não ter que gastar tempo de dois engenheiras(os) (o seu, e o de uma pessoa que vai corrigir o seu trabalho) em um único pedaço de software. Então nada de desafio para "levar para casa" aqui, pois dá trabalho pra corrigir. Algo que é comum é pedir para o candidato resolver um problema simples (auto-corrigível) no Hackerrank (ou similar), e em seguida fazer uma entrevista técnica onde um engenheiro te pergunta algumas coisas por algum tempo.
 
 Partindo do exemplo acima, para uma pessoa ingressando na area, espere algum problema simples de programação ou algumas perguntas simples de infra. 
 
@@ -100,16 +108,17 @@ Um exemplo de problema simples bem fácil de programação para essas empresas g
     [Exemplo. Input: a = "11", b = "1"; Output: "100"`
 ```
 
-Eu sei que a vaga é pra algo de infra, e programação não necessariamente está envolvido, mas essas empresas costumam testar assim de qualquer maneira, inclusive para iniciantes. Primeiro motivo é o que eu disse, fácil auto-correção, segundo é que algumas dessas empresas são opinionadas em querer que todos funcionários com algum conhecimento de programação. Se sua intenção é, pelo menos no início, não focar em programação, não aplique pra essas empresas (por mais que eu recomende sim aprender programação para todo mundo 😂).
+Eu sei que a vaga é pra algo de infra, e programação não necessariamente está envolvido, mas essas empresas costumam testar assim de qualquer maneira, inclusive para iniciantes. Primeiro motivo é o que eu disse, fácil auto-correção, segundo é que algumas dessas empresas tem uma política de querer que todos funcionários com algum conhecimento de programação (pois assim, a automatização de processos e manutenção do Error Budget se torna mais fácil). Se sua intenção é, pelo menos no início, não focar em programação, não aplique pra essas empresas (por mais que eu recomende sim aprender programação para todo mundo 😂).
 
 Um exemplo de pergunta muito simples de infra pode ser:
 
 ```
     O que os campos da saída de `ls -al` significam? 
-    '-rwxrw-r--    1    root   root 2048    Jan 13 07:11 db.dump'
+    '-rwsrw-r-x 1 jenkins docker 0 set 20 08:31 binary
+
 ```
 
-E nesse caso teria que explicar as permissões, número de links, nome do dono e assim por diante.
+E nesse caso teria que explicar as permissões, número de links, nome do dono e assim por diante. Nesse nível, ainda não devem esperar o significado do [escalonamento de permissões](https://en.wikipedia.org/wiki/Setuid) mas definitivamente ganha pontos souber.
 
 Esses dois são exemplos para saber o que poderia esperar nesse nível, e é claro que a empresa perguntaria mais perguntas e possivelmente mandaria um desafio online com várias partes.
 
@@ -122,7 +131,7 @@ Na maioria dessas entrevistas não é esperado que venha com a resposta de cara.
 
 Não ache que FAANMGs, ou empresas gigantes, são o objetivo máximo de todo mundo em tech. Tem gente que prefere trabalhar para startups começando, tem gente que prefere trabalhar em empresas menores onde se conhece todo mundo, ou até gente que prefere trabalhar para empresas de outros ramos começando em tech, pelo desafio da transformação. Estou incluindo aqui empresas de pequeno, médio porte. Também estou incluindo algumas empresas de grande porte, mas que seu business não é necessariamente tech puro.
 
-Nesse cenário, entrevistas e processo seletivo variam bastante. É um mar de opções que vai de totalmente informal a totalmente estruturado. Vou tentar mostrar algumas opções.
+Nesse cenário, entrevistas e processo seletivo variam bastante, porque o próprio conhecimento interno sobre o assunto pode variar de empresa para empresa. É um mar de opções que vai de totalmente informal a totalmente estruturado. Vou tentar mostrar algumas opções.
 
 <a name="alguma-xp-empresas-geral-comportamental"></a>
 ### Parte comportamental
@@ -131,24 +140,23 @@ Para a parte comportamental ainda vale a pena olhar site da empresa. Entender su
 
 ### Parte técnica
 
-Considerando desafios técnicos, para iniciantes completos (menos de 6 meses de xp), muitas vezes não é necessário nem passar por um desafio propriamente dito. As vezes só testam fluência computacional, como nomear componentes e saber por alto como um computador funciona. É comum testarem resolução de problemas técnicos de uma forma mais próxima da entrevista comportamental. Então um exemplo seria:
+Considerando desafios técnicos, para iniciantes completos (menos de 6 meses de xp), muitas vezes não é necessário nem passar por um desafio propriamente dito. As vezes só testam fluência computacional, como nomear componentes e saber por alto como um computador funciona. É comum testarem resolução de problemas técnicos de uma forma mais próxima da entrevista comportamental, ou ainda, perguntarem sobre sua experiência com o tema. Alguns exemplos seriam:
 
-```
-    Qual foi o ultimo problema técnico que você teve que resolver, e qual foi sua estratégia para chegar numa solução?
-```
+* `Qual foi o ultimo problema técnico que você teve que resolver, e qual foi sua estratégia para chegar numa solução?`
+* ` Você já ouviu falar sobre <tal tecnologia>?`
 
-Dessa forma te dando oportunidade para falar de algo técnico de sua escolha. De preferencia escolha algo mais próximo do que você faria na posição pra qual está aplicando. Mas a questão é aberta justamente pra te dar abertura pra trazer outras coisas.
+Ambas as perguntas te dão oportunidade para falar de algo técnico de sua escolha. Use isso a seu favor, e escolha algo mais próximo do que você faria na posição pra qual está aplicando. Se você não tiver essa experiência, não tem problema. A questão é aberta justamente pra te dar abertura pra trazer outras coisas. O importante é tentar usar exemplos que você se sinta extremamente confortável para falar, pois a sua motivação na resposta é um fator muito importante.
 
 É raro mais é possível ter desafio "para levar pra casa". Por ser raro para iniciantes completos, prefiro explicar em outra seção.
 
 É também comum uma entrevista técnica em que a pessoa entrevistando te dá um desafio de algo de infra, mesmo que você não saiba nada sobre aquilo, para ver como você se vira junto com ela. Assim como descrevemos antes, a pessoa vai te guiando para ver se pelo menos você consegue fazer perguntas que te sejam úteis. Pois sendo iniciante num emprego é exatamente isso que você vai ter que saber fazer: Boas perguntas.
 
-Por fim, existe as entrevistas com 23489234789 fases e com requisitos exorbitantes para iniciantes. É horrível que isso exista. Como disse no início dessa seção, fazem isso pra pagar menos para uma pessoa iniciante mas super performante, ou alguma pessoa com baixa confiança e auto estima que aceita estar em um nível de senioridade inferior. Também existe empresas que copiam o processo seletivo de FAANMGs, colocando desafios que testam conhecimento de estruturas de dados e algoritmos, e resolução de problemas complexos. Vou falar disso em outra seção.
+Por fim, existem as entrevistas com 23489234789 fases e com requisitos exorbitantes para iniciantes. É horrível que isso exista. Como disse no início dessa seção, fazem isso pra pagar menos para uma pessoa iniciante mas super performante, ou alguma pessoa com baixa confiança e auto estima que aceita estar em um nível de senioridade inferior. Também existe empresas que copiam o processo seletivo de FAANMGs, colocando desafios que testam conhecimento de estruturas de dados e algoritmos, e resolução de problemas complexos. Vou falar disso em outra seção.
 
 
 # Alguma Experiencia na Área
 
-Vou evitar de propósito os níveis de senioridade clássicos da indústria nesse texto, mas se fosse pra inserir aqui, insira Júnior. Uma pessoa que tem alguns projetos pessoais, ja teve exposição à algumas tecnologias, fez um curso um pouco mais longo com mão na massa, talvez instalou o linux e está tentando usar no dia a dia ou talvez fez algum estágio por algum período de tempo.
+Vou evitar de propósito os níveis de senioridade clássicos da indústria nesse texto, mas se fosse pra inserir aqui, insira Júnior. Uma pessoa que tem alguns projetos pessoais, ja teve exposição à algumas tecnologias, fez um curso um pouco mais longo com mão na massa, talvez instalou o linux e está tentando usar no dia a dia ou talvez fez algum estágio por algum período de tempo, ou ainda está saindo de alguma faculdade que trouxe esta experiência.
 
 ## Alguma Experiencia na Área - Em Big Tech Corps
 *Pule essa seção se não tem interesse em FAANMG e similares*
@@ -162,7 +170,7 @@ Se você procurar agora por vagas Junior nessas empregas um pouco mais gigantes 
 
 ### Parte comportamental
 
-Considerando as entrevistas de cunho comportamental, o que vai mudar, pra parte de iniciantes, é que eles vão observar se você consegue mostrar mais "evidencias" de que age de acordo com os valores da empresa. Também vão ver se mostra esses valores em situações que tenham um pouco mais de impacto. Isso vai crescendo cada vez mais de acordo com a senioridade. Se te perguntarem "Como foi a ultima vez que você teve que lidar com conflito entre colegas de trabalho" para uma vaga de treinamento para iniciantes talvez venham procurar evidencias de que você tentou desescalar a situação, mas numa vaga Júnior talvez tentem ver se vc também agiu de alguma maneira que achasse a causa real do conflito para resolver. Assim como na seção anterior, ler e internalizar o que a empresa divulga sobre sua cultura interna é importante. E pode parecer artificial, mas faz toda diferença ensaiar possíveis respostas para essas perguntas (principalmente se a entrevista não for na sua lingua materna). Leia sobre os guias culturais da empresa, procure exemplos de perguntas no Glassdoor e outras plataformas, e ensaie possíveis respostas. Mesmo que perguntem outras coisas, vai conseguir se virar muito melhor assim por estar na mesma vibe.
+Considerando as entrevistas de cunho comportamental, o que vai mudar, pra parte de iniciantes, é que eles vão observar se você consegue mostrar mais "evidencias" de que age de acordo com os valores da empresa. Também vão ver se mostra esses valores em situações que tenham um pouco mais de impacto. Isso vai crescendo cada vez mais de acordo com a senioridade. Se te perguntarem "Como foi a ultima vez que você teve que lidar com conflito entre colegas de trabalho" para uma vaga de treinamento para iniciantes talvez venham procurar evidencias de que você tentou desescalar a situação, mas numa vaga Júnior talvez tentem ver a sua atitude, em busca de achar a causa real do conflito para resolver. Assim como na seção anterior, ler e internalizar o que a empresa divulga sobre sua cultura interna é importante. E pode parecer artificial, mas faz toda diferença ensaiar possíveis respostas para essas perguntas (principalmente se a entrevista não for na sua lingua materna). Leia sobre os guias culturais da empresa, procure exemplos de perguntas no Glassdoor e outras plataformas, e ensaie possíveis respostas. Mesmo que perguntem outras coisas, vai conseguir se virar muito melhor assim por estar na mesma vibe.
 
 ### Parte técnica
 
@@ -212,7 +220,7 @@ Para a parte técnica, aqui começa a ficar um pouco mais interessante. Na seç�
 
 Perceba que esse é um desafio que daria pra passar tanto pra Juniors e para Plenos. Talvez deixando claro para Juniors que não é necessariamente esperado que eles resolvam o problema. Mas ao final da semana a pessoa entrevistadora pareia com você e você tem a oportunidade de mostrar tudo que tentou, o que não conseguiu, e o que conseguiu. Você tem a oportunidade de mostrar as partes da pipeline que entendeu, e as partes que não entendeu. E daí vai ser avaliado em cima disso (Pedi autorização, esse é um desafio de uma empresa pequena do aí do Brasil, e eu acho maneiro).
 
-É claro que ainda temos entrevistas técnicas de perguntas e respostas para vagas de infra dessa seção também. Para pouca experiência na area, não costumam pegar muito pesado, então coisas que perguntam são mais em cima da sua experiência. Se você disser que mexeu bastante com Cloud, é possível que perguntem "Que serviço da AWS você usaria para guardar diversos arquivos de imagens?" e a resposta seria S3. Se você disser que fez alguns projetos pessoais com CI/CD no github actions, devem te perguntar como você configurou, quais actions usou, como controlou credenciais e tudo mais. Pra uma vaga Junior é bacana casar a pouca experiencia que você tem com a necessidade e o que a empresa está fazendo. Mas talvez mais importante que isso é mostrar a capacidade de aprender rápido o que quer que a empresa esteja usando, mostrando que o que você aprendeu até esse ponto foi assimilado com sucesso.
+É claro que ainda temos entrevistas técnicas de perguntas e respostas para vagas de infra dessa seção também. Para pouca experiência na area, não costumam pegar muito pesado, então coisas que perguntam são mais em cima da sua experiência. Se você disser que mexeu bastante com Cloud, é possível que perguntem "Que serviço da AWS você usaria para guardar diversos arquivos de imagens?" e a resposta seria S3. Se você disser que fez alguns projetos pessoais com CI/CD no github actions, devem te perguntar como você configurou, quais actions usou, como controlou credenciais e tudo mais. Pra uma vaga Junior é bacana casar a pouca experiencia que você tem com a necessidade e o que a empresa está fazendo. Mas talvez mais importante que isso é mostrar a capacidade de aprender rápido o que quer que a empresa esteja usando, mostrando que o que você aprendeu até esse ponto foi assimilado com sucesso. Da mesma forma para uma pessoa iniciante, busque dar respostas e contextos em que você consiga sua motivação com o assunto.
 
 É possível que façam perguntas não relacionadas a sua experiencia para as coisas que a empresa precisa de fato que a pessoa já saiba para a vaga. Mas sendo uma vaga Junior, ainda é possível que relevem você não saber, se mostrar outras qualidades.
 
@@ -227,9 +235,9 @@ Aqui estou falando de pessoas com experiencia real de produção. Aqui dá pra e
 
 ### Parte comportamental
 
-Para plenos e seniors aplicando para Big Tech Corps, a parte das entrevistas comportamentais vai esperar que basicamente todas as respostas mostrem algum aspecto dos valores da empresa exposto explicitamente (lembre-se, pesquise a empresa), e muitas vezes vai esperar que respostas mostrem mais do que um desses valores. Se está numa entrevista para Amazon (só um exemplo), e é uma pergunta sobre como lidou com treta de cliente, a expectativa é mostrar evidentemente pontos de [Customer Obsession](https://www.amazon.jobs/de/principles) ou talvez [Think Big](https://www.amazon.jobs/de/principles) juntos na mesma resposta. Querem ver onde você foi extremamente eficiente, onde parou pra planejar e onde avançou para correr um risco calculado. É difícil fingir tudo isso, é possível, mas é facilmente verificável. Pense em situações que você realmente demonstrou esses valores e saiba engrandecer a história. Contar histórias é a habilidade mais subestimada da nossa indústria.
+Para plenos e seniors aplicando para Big Tech Corps, a parte das entrevistas comportamentais vai esperar que basicamente todas as respostas mostrem algum aspecto dos valores da empresa exposto explicitamente (lembre-se, pesquise a empresa), e muitas vezes vai esperar que respostas mostrem mais do que um desses valores. Se está numa entrevista para Amazon (só um exemplo), e é uma pergunta sobre como lidou com treta de cliente, a expectativa é mostrar evidentemente pontos de [Customer Obsession](https://www.amazon.jobs/de/principles) ou talvez [Think Big](https://www.amazon.jobs/de/principles) juntos na mesma resposta. Querem ver onde você foi extremamente eficiente, onde parou pra planejar e onde avançou para correr um risco calculado. É comum passar por fases de triagem em que você tem que mostrar esses valores por meio de testes, para só então conseguir um slot em entrevista. É difícil fingir tudo isso, é possível, mas é facilmente verificável. Pense em situações que você realmente demonstrou esses valores e saiba engrandecer a história. Contar histórias é a habilidade mais subestimada da nossa indústria.
 
-Não se esqueça de ter na ponta da língua respostas para perguntas na área de metodologias, processo e de como fazer times serem efetivos. É esperado de pessoas com mais experiência que saibam um tanto sobre o que funciona e o que não funciona para operar times eficientes. DevOps é sobre compartilhamento, observabilidade, LEAN, automação e cultura. Cultura e LEAN são botados de lado de vez em quando. Lembre disso também.
+Não se esqueça de ter na ponta da língua respostas para perguntas na área de metodologias, processo e de como fazer times serem efetivos. É esperado de pessoas com mais experiência que saibam um tanto sobre o que funciona e o que não funciona para operar times eficientes. DevOps é sobre compartilhamento, observabilidade, LEAN, automação e cultura. Cultura e LEAN são botados de lado de vez em quando. Lembre disso também. 
 
 ### Parte técnica
 
@@ -241,27 +249,39 @@ Para vagas de infra não necessariamente vão esperar a resposta otimizada, mas 
 
 Na entrevista técnica vão testar seus conhecimentos de Redes, Cloud, linux, ferramentas e práticas DevOps/SRE em geral. É comum ter uma call com um engenheiro onde ele vai conversando contigo e te perguntando várias coisas e pedindo para você elaborar em cima do assunto. Exemplo:
 
-```
-    Como você resolveria um problema em que um dos microserviços do seu time não está conseguindo acessar seu respectivo banco de dados?
-    Como você faria o debug desse problema?
-    Se achasse uma solução, como evitaria que isso acontecesse de novo?
-    Se o problema fosse DNS, o que você faria?
-```
+* `Como você resolveria um problema em que um dos microserviços do seu time não está conseguindo acessar seu respectivo banco de dados?`
+* `Como você faria o debug desse problema?`
+* `Se achasse uma solução, como evitaria que isso acontecesse de novo?`
+* `Se o problema fosse DNS, o que você faria?`
+
 
 Mas é claro que na entrevista isso poderia ser mais orgânico, se o modelo de entrevista da empresa der liberdade para a pessoa entrevistando seguir do jeito que ela quiser. O ponto é que a pessoa entrevistando te daria um problema, e o que ela quer ver é como você triangularia uma solução.
 
 Outras perguntas um pouco mais difíceis que é possível ver nesse nível em Big Tech Corps:
 
-```
-    Explique interrupções e Interrupt Handlers no Linux
-    Você precisa deletar um diretório com milhões de arquivos. Como fazer isso eficientemente?
-    Qual sua preferencia de estratégia de deploy? Push ou Pull Strategy?
-    A latência de um dos serviços está muito alta, qual seria sua primeira suposição da causa, e como resolveria?
-    Como otimizar debugging de pipelines do Jenkins (ou qualquer ferramenta de Ci semelhante)?
-    Como definir um SLO que faça sentido?
-    Pergunta específicas de alguma tecnologia também são possíveis, como: Como você permitiria SREs a fazer tasks de admin no seu cluster kubernetes, mas bloquearia Devs, deixando-os só dar get em recursos em namespaces específicas?
-```
+* `Explique interrupções e Interrupt Handlers no Linux`
+* `Você precisa deletar um diretório com milhões de arquivos. Como fazer isso eficientemente?`
+* `Qual sua preferencia de estratégia de deploy? Push ou Pull Strategy`
+* `A latência de um dos serviços está muito alta, qual seria sua primeira suposição da causa, e como resolveria?`
+* `Como definir um SLO que faça sentido? Qual SLIs você usaria, e porque? Como você acompanharia o SLO?`
 
+
+Perguntas específicas de alguma tecnologia também são possíveis, como: 
+
+* `Como você permitiria SREs a fazer tasks de admin no seu cluster kubernetes, mas bloquearia Devs, deixando-os só dar get em recursos em namespaces específicas?`
+* `Como otimizar debugging de pipelines do Jenkins (ou qualquer ferramenta de Ci semelhante)?`
+* `Qual é o output desta linha de comando? O que ela faz?`
+```
+cat apache-anon-noadmin.log | \
+awk 'function ri(n) \
+{  return int(n*rand()); }  \
+BEGIN { srand(); }  { if (! \
+($5 in jack)) {  \
+jack[$5] = sprintf("%d.%d.%d.%d", \
+ri(255), ri(255)\
+, ri(255), ri(255)); } \
+$5 = jack[$5]; print __g5_token5b610ba53dbe4  }'`
+```
 ### Parte System Design
 
 Aqui é clássico perguntarem algo do tipo: `Como você faria o design de sistema de um clone do instagram, começando simples e depois chegando a conseguir aguentar a mesma escala do instagram real?` (vou dar referencias pra como se preparar pra esse tipo de coisa no final). Se for remoto devem te dar acesso a algum mural do [Miro](miro.com) ou do [draw.io](draw.io) (ou similares) e te pedir pra ir desenhando um diagrama e explicando suas escolhas (claro, te fazendo perguntas e vão te guiando ao mesmo tempo). É normal usarem essa fase pra perguntarem algumas coisas genéricas de SysDesign antes de fazer a grande pergunta de como fazer um sistema inteiro. Algo como `Como decidir entre bancos de dados NoSQL ou SQL para um novo projeto?`. É esperado que você faça mais perguntas de volta, para ter mais contexto.
@@ -293,7 +313,7 @@ Vamos de novo ao desafio de levar para casa. O desafio que citei anteriormente s
 
 Esse é um tipo de desafio que toma bastante tempo tanto do candidato quanto da pessoa entrevistadora, pois corrigir isso não é uma tarefa rápida. Dependendo do tempo que leva pra fazer esse tipo de desafio, tem até empresas que pagam o seu tempo fazendo o desafio, mesmo que você não seja selecionado, para respeitar o seu tempo investido nisso. Sinta-se ainda mais a vontade de cobrar se o desafio for um dito "problema real da empresa", e que você está resolvendo no processo seletivo. Se é um problema real, de trabalho, todos concordamos aqui que deve ser pago, né 😂?!
 
-É possível também utilizarem os ambientes de desafios de infra do Rackerrank (ou similar) em que te dão acesso ssh temporário a uma máquina e você tem que performar algumas tarefas descritas no enunciado nessa máquina. No fim o Rackerrank vai executar um script nessa máquina para verificar se a tarefa foi feita. Exemplo:
+É possível também utilizarem os ambientes de desafios de infra do Hackerrank (ou similar) em que te dão acesso ssh temporário a uma máquina e você tem que performar algumas tarefas descritas no enunciado nessa máquina. No fim o Hackerrank vai executar um script nessa máquina para verificar se a tarefa foi feita. Exemplo:
 
 ```
     Clique no botão avançar para ter acesso ssh à máquina desse desafio. Quando tiver acesso a máquina, performe as seguintes tarefas:
@@ -306,24 +326,39 @@ Esse é um tipo de desafio que toma bastante tempo tanto do candidato quanto da 
     - Faça que o usuário com a seguinte chave pública [CHAVEPUBLICA consiga acessar essa máquina por ssh quando precisar, no usuário user123
 ```
 
-A empresa vai configurar o Rackerrank (ou similar) para te deixar ter acesso à maquina por algum período de tempo, e você tem esse tempo pra executar as tarefas. De vez em quando é tempo mais do que suficiente. Mas as vezes a empresa dá pouco tempo de propósito pra ver como quanto você consegue fazer, e como você gerencia seu tempo.
+A empresa vai configurar o Hackerrank (ou similar) para te deixar ter acesso à maquina por algum período de tempo, e você tem esse tempo pra executar as tarefas. De vez em quando é tempo mais do que suficiente. Mas as vezes a empresa dá pouco tempo de propósito pra ver como quanto você consegue fazer, e como você gerencia seu tempo. Nesses casos, o importante é não se desesperar, e buscar fazer as partes mais importantes primeiro. Vocề consegue entender quais são as partes mais importantes nas entrevistas iniciais e comportamentais, onde a empresa te explica o que ela espera de você (aqui, se for uma vaga com foco em segurança você tem que buscar fazer ações de segurança primeiro, enquanto uma vaga que tem foco em disponibilidade buscaria corrigir algum problema na aplicação primeiro, etc.)
 
-Exite também a possibilidade de a empresa marcar uma entrevista em que você vai resolver um problema JUNTO COM a pessoa entrevistadora. Vocês vão parear num problema razoavelmente real, e o que querem testar é se você consegue colaborar para solução de problemas, e se você consegue se comunicar efetivamente para alcançar um objetivo. É similar a uma entrevista comum, mas a diferença é que a pessoa entrevistadora vai ativamente estar querendo solucionar o problema também, tentando te ajudar em partes.
+Exite também a possibilidade da empresa marcar uma entrevista em que você vai resolver um problema JUNTO COM a pessoa entrevistadora. Vocês vão parear num problema razoavelmente real, e o que querem testar é se você consegue colaborar para solução de problemas, e se você consegue se comunicar efetivamente para alcançar um objetivo. É similar a uma entrevista comum, mas a diferença é que a pessoa entrevistadora vai ativamente estar querendo solucionar o problema também, tentando te ajudar em partes.
 
 Claro, ainda existe a entrevista clássica em que te perguntam coisas a respeito de redes, linux, infra, Cloud e tudo mais. Assim como nas descrições que fiz anteriormente, a ideia é sempre mostrar seu raciocínio, fazer mais perguntas pra entender o contexto, e chegar numa resposta mais detalhada que for possível.
 
 Mais alguns exemplos clássicos:
 
-```
-    - Como funciona resolução DNS, explique com a maior quantidade de detalhes que conseguir?
-    - Como se resolve problemas de CORS?
-    - Como cookies passam no protocolo HTTP?
-    - Como medir latência e outras métricas de um serviço só com ferramentas cli linux numa máquina?
-    - Como matar um processo que está bloqueando um arquivo?
-    - Que mudanças você faria inicialmente em pipelines de CI que estão muito demoradas?
-    - Um banco de dados gerenciado na cloud está em 100% de CPU, e sua réplica está com replication lag enorme, quais são seus primeiros passos para investigar?
-    - Que serviços da AWS (ou sua cloud favorita) você mais passou raiva, e como geralmente resolve problemas nele?
-```
+* `Como funciona resolução DNS, explique com a maior quantidade de detalhes que conseguir?`
+
+* `Como se resolve problemas de CORS?`
+
+* `Como cookies passam no protocolo HTTP?`
+
+* `Quais as diferenças entre o HTTP/2 e o HTTP/1?`
+
+* `Como funciona o protocolo gRPC e como é possível debuggá-lo?`
+
+* `Como medir latência e outras métricas de um serviço só com ferramentas cli linux numa máquina?`
+
+* `Como matar um processo que está bloqueando um arquivo?`
+
+* `Que mudanças você faria inicialmente em pipelines de CI que estão muito demoradas?`
+
+* `Um banco de dados gerenciado na cloud está em 100% de CPU, e sua réplica está com replication lag enorme, quais são seus primeiros passos para investigar?`
+
+* `Que serviços da AWS (ou sua cloud favorita) você mais passou raiva, e como geralmente resolve problemas nele?`
+
+Mais uma vez, dependendo da vaga, perguntas específicas podem aparecer, como:
+
+* `Como você configuraria um channel do rabbitMQ para propagar comunicação para estes serviços?`
+
+<!-- -Adicionar mais exemplos-->
 
 # Ok Lucas, mas como eu me preparo para algum desses níveis de entrevista?
 
